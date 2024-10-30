@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.box_lienhe{
+    display: block;
+    height: 60px;
+    padding: 0 50px;
+    background-color: #f3f3f3;
+}
+.phone_icon{
+    border: 1px black solid;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 30px;
+    text-align: center;
+    animation: anim_phone 0.5s infinite alternate;
+    color: black;
+}
+@keyframes anim_phone{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+.navbar{
+    height: 302px;
+    padding: 0 60px;
+}
+.tren{
+    height: 176px;
+    padding: 20px 0 10px;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.duoi{
+    height: 126px;
+}
+.orther{
+    display: flex;
+    width: 10%;
+    height: 40px;
+    align-items: center;
+    float: right;
+    position: absolute;
+    right: 3cm;
+    justify-content: space-between;
+}
+.orther li{
+    font-size: 20px;
+}
+/*------------duoilogo-----------------*/
+.duoi{
+    min-height: 63px;
+    background-color: white;
+    display: block;
+    
+}
+
+
+.duoi li{
+    display: block;
+    width: 250px;
+    height: 63px;
+    float: left;
+    justify-content: center;
+}
+.duoi li:hover>a>h3{
+    color: red;
+}
+.duoi li:hover>a>i{
+    color: red;
+    animation: rotate 0.5s forwards ;
+}
+.duoi li:hover>div{
+    display: none;
+}
+@keyframes rotate{
+    from{transform:rotate(0deg);}
+    to{transform: rotate(180deg);}
+}
+.duoi li a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color:black ;
+}
+.duoi h3{
+    font-size: 28px;
+    margin: 0 20px;
+}
